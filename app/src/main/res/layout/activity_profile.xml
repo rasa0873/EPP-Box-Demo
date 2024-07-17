@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark_epp_bw_small"
+    android:orientation="vertical"
+    tools:context=".main.activities.ProfileEditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_profile_edit_activity"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="0dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_edit"
+            android:layout_width="@dimen/profile_image_size_large"
+            android:layout_height="@dimen/profile_image_size_large"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/image_contentDescription"
+            android:elevation="@dimen/round_image_elevation"
+            android:src="@drawable/person_128"
+            android:transitionName="userPicture"
+            app:civ_border_color="@color/light_gray1"
+            app:civ_border_width="@dimen/nav_image_circular_border_width" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_edit_camera_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/white_outline_camera_alt_24"
+            app:civ_circle_background_color="@color/epp_primary"
+            android:elevation="@dimen/round_image_elevation"
+            android:layout_alignBottom="@+id/iv_profile_edit"
+            android:layout_alignEnd="@id/iv_profile_edit"
+            android:contentDescription="@string/image_contentDescription"
+            />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+        android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextAppearance="@style/HintTextStyle"
+            app:boxBackgroundColor="@color/white">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_profile_edit_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="textCapSentences|textPersonName"
+                android:maxLines="1"
+                android:maxEms="30"
+                android:ellipsize="end"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_profile_edit_id"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextAppearance="@style/HintTextStyle"
+            app:boxBackgroundColor="@color/white">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_profile_edit_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxEms="15"
+                android:ellipsize="end"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_profile_edit_phone"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextAppearance="@style/HintTextStyle"
+            app:boxBackgroundColor="@color/white">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/et_profile_edit_phone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxEms="15"
+                android:ellipsize="end"
+                android:imeOptions="actionDone"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_profile_edit_role"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="26dp"
+        app:hintTextAppearance="@style/HintTextStyle"
+        app:boxBackgroundColor="@color/white">
+
+        <AutoCompleteTextView
+            android:id="@+id/text_input_autocomplete_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:textSize="14sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <include
+        layout="@layout/activity_profile_fab"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+
+</LinearLayout>

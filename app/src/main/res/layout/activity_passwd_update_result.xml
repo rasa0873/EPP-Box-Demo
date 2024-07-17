@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_update_pass_result"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_update_passwd_result"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/black_check_circle_24"
+        android:alpha="0.8"
+        />
+
+    <TextView
+        android:id="@+id/tv_update_passwd_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="@string/passwd_updated_capital"
+        android:textSize="18sp"
+        android:textColor="@color/dark_gray1"
+        android:textStyle="bold"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_update_passwd_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sign_up_screen_btn_marginTop"
+        android:background="@drawable/shape_button_rounded"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        style="@style/ButtonStyle"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:text="@string/OK"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/btn_text_size" />
+
+
+
+
+
+</LinearLayout>

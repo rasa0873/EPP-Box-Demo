@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark_epp_bw_small"
+    android:orientation="vertical"
+    tools:context=".main.activities.CreateUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/nav_image_size3"
+        android:layout_height="@dimen/nav_image_size3"
+        android:src="@drawable/epp_logo_transparent"
+        android:alpha="0.4"
+
+        />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+        android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:boxBackgroundColor="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_email_create_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:maxEms="40"
+                    android:ellipsize="end"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:boxBackgroundColor="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_password_create_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:maxEms="20"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:boxBackgroundColor="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name_create_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:maxLines="1"
+                    android:maxEms="30"
+                    android:ellipsize="end"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_profile_edit_id"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:boxBackgroundColor="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_citizenId_create_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxEms="15"
+                    android:ellipsize="end"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tv_profile_edit_phone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:hintTextAppearance="@style/HintTextStyle"
+                app:boxBackgroundColor="@color/white">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_phone_create_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxEms="15"
+                    android:ellipsize="end"
+                    android:imeOptions="actionDone"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+        android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+        app:cardElevation="@dimen/card_view_elevation"
+        app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tv_profile_edit_role"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:hintTextAppearance="@style/HintTextStyle"
+            app:boxBackgroundColor="@color/white">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_roles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textSize="14sp"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+        layout="@layout/activity_create_profile_fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

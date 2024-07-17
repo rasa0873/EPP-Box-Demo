@@ -1,0 +1,34 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/gradient_on_top.xml" value="0.1575" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/ic_black_arrow_back_24.xml" value="0.1295" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/ic_blue_contacts_24.xml" value="0.1575" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/ic_blue_sign_out_24.xml" value="0.1575" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/nav_header_portal_background.xml" value="0.176" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/progressdialog.xml" value="0.1575" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/drawable/shape_button_rounded.xml" value="0.1295" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/activity_base.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/activity_portal.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/activity_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/app_bar_portal.xml" value="0.264" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/custom_progressdialog.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/nav_header_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/snackbar_custom.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/layout/snackbar_custom_b.xml" value="0.264" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/menu/activity_portal_drawer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_epp.xml" value="0.1295" />
+        <entry key="..\:/Users/Windows 10/AndroidStudioProjects/EPPDraft1/app/src/main/res/mipmap-anydpi-v26/ic_launcher_epp_round.xml" value="0.124" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

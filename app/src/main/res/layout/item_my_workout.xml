@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_my_workout_item"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_my_workout_date"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="@dimen/item_user_image_size_large"
+            android:background="@color/light_gray1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_my_workout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/epp_primary"
+                android:text="5:00 PM"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:fontFamily="@font/montserrat"
+                android:layout_alignTop="@id/tv_my_workout_day"
+                />
+
+            <TextView
+                android:id="@+id/tv_my_workout_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/epp_primary"
+                android:text="23"
+                android:paddingBottom="4dp"
+                android:textSize="40sp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_my_workout_month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/epp_primary"
+                android:text="JAN"
+                android:fontFamily="@font/montserrat"
+                android:textSize="14sp"
+                android:visibility="visible"
+                android:layout_alignBottom="@id/tv_my_workout_day"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_workout_name_layout_marginStart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_my_workout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/item_user_name_text_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Workout description"/>
+
+            <TextView
+                android:id="@+id/tv_item_my_workout_trainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="@dimen/item_user_created_by_text_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Arnold S."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_item_my_workout_vacancies"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/epp_primary"
+                android:textSize="@dimen/item_user_created_by_text_size"
+                android:gravity="end|top"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                tools:text="8"/>
+
+            <ImageView
+                android:id="@+id/iv_item_my_workout_attended"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/blue_check_circle_24"/>
+
+            <TextView
+                android:id="@+id/tv_item_my_workout_year"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/light_gray1"
+                android:textStyle="bold"
+                android:textSize="@dimen/item_user_created_by_text_size"
+                android:gravity="end|bottom"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                tools:text="2023"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_user_divider_height"
+        android:layout_marginTop="@dimen/item_user_divider_marginTop"
+        android:visibility="gone"
+        android:background="@color/divider_color"/>
+
+
+</androidx.cardview.widget.CardView>

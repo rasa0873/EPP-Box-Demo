@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_athlete_item"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_user_content_padding">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_athlete_image"
+            android:layout_width="@dimen/item_user_image_size"
+            android:layout_height="@dimen/item_user_image_size"
+            android:contentDescription="@string/image_contentDescription"
+            android:src="@drawable/person_128"
+            app:civ_border_color="@color/primary_text_color"
+            app:civ_border_width="@dimen/item_user_image_circular_border_width"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_user_name_layout_marginStart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_athlete_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/item_user_name_text_size"
+                tools:text="Athlete Name"/>
+
+            <TextView
+                android:id="@+id/tv_item_athlete_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="@dimen/item_user_created_by_text_size"
+                tools:text="athlete@box.com"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_item_user_check"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="7dp"
+            android:gravity="end|center_horizontal"
+            android:src="@drawable/blue_check_24"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_user_divider_height"
+        android:layout_marginTop="@dimen/item_user_divider_marginTop"
+        android:visibility="gone"
+        android:background="@color/divider_color"/>
+
+
+</androidx.cardview.widget.CardView>

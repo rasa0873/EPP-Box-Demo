@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.activities.WeekCalendarView">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@color/light_gray1">
+
+        <ImageView
+            android:id="@+id/button_prev_week"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="32dp"
+            android:src="@drawable/blue_double_arrow_left_24"
+            android:background="@null"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/monthYearTV_week"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Week 25"
+            android:fontFamily="@font/open_sans"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/dark_gray1"/>
+
+        <ImageView
+            android:id="@+id/button_next_week"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:layout_height="32dp"
+            android:src="@drawable/blue_double_arrow_right_24"
+            android:background="@null"
+            android:textStyle="bold"
+
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerViewWeek"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/calendar_cell"
+        android:background="@color/light_gray1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_workout_list_week"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            tools:listitem="@layout/item_workout_week"
+            >
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_no_workout_available_week"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/no_workouts_scheduled"
+            android:visibility="gone"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarLightStandAlone_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateTint="@color/epp_primary"
+            android:layout_gravity="center"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

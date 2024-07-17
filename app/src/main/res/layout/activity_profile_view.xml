@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.activities.ProfileViewActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circular_gradient_background_6">
+
+        <ImageView
+            android:id="@+id/iv_profile_back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:src="@drawable/white_arrow_back_ios_24"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_profile_edit_pen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/white_edit_24"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_head_content_profile_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile_view"
+                android:layout_width="@dimen/profile_image_size"
+                android:layout_height="@dimen/profile_image_size"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/image_contentDescription"
+                android:elevation="@dimen/round_image_elevation"
+                android:src="@drawable/person_128"
+                android:transitionName="userPicture"
+                app:civ_border_color="@color/light_gray1"
+                app:civ_border_width="@dimen/nav_image_circular_border_width" />
+
+            <TextView
+                android:id="@+id/tv_profile_view_head_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="30dp"
+                android:text="user@epp.com"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/ll_profile_view_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_profile_view_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/light_gray1"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_view_calendar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/plan"
+                    android:gravity="center"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignBottom="@id/ll_head_content_profile_view"
+            android:elevation="20dp"
+            android:background="@color/light_gray2"
+            app:cardCornerRadius="10dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_main_profile_view"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/ic_blue_contacts_24"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_main_profile_calendar"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/blue_calendar_month_24" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <FrameLayout
+        android:id="@+id/profile_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:paddingTop="0dp">
+
+    </FrameLayout>
+
+</LinearLayout>

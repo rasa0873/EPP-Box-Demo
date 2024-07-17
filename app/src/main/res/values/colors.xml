@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="epp_secondary">#363A43</color>
+    <color name="epp_secondary_variant">#363A43</color>
+    <color name="epp_primary">#0A80F5</color>
+    <color name="epp_primary_variant">#0A80F5</color>
+
+    <color name="colorAccent">#0C90F1</color>
+    <color name="lightBlue1">#99ccff</color>
+    <color name="lightBlue2">#cce6ff</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="light_gray1">#f0f0f0</color>
+    <color name="light_gray2">#F9F9F9</color>
+    <color name="light_gray3">#ABB2B9</color>
+    <color name="dark_gray1">#363A43</color>
+    <color name="dark_gray2">#bcbcbc</color>
+    <color name="dark_gray3">#c8c8c8</color>
+
+    <color name="divider_color">#EAEAEA</color>
+
+    <color name="primary_text_color">#363A43</color>
+    <color name="secondary_text_color">#7A8089</color>
+
+    <color name="error_red">#B00020</color>
+    <color name="error_red2">#FF4E46</color>
+    <color name="green">#54d21d</color>
+
+
+
+
+</resources>

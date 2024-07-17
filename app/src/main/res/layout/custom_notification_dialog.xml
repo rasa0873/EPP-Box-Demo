@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp">
+
+    <LinearLayout
+        android:background="@drawable/dialog_bg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/cancel_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/white_ic_cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_custom_notify_alert_dialog_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="NOTIFICATION"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_custom_notify_alert_dialog_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:text="Please consider yourself notified"
+                android:textColor="#000"
+                android:textStyle="normal"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/ok_button_custom_notify_dialog"
+                    android:layout_width="90dp"
+                    android:layout_height="28dp"
+                    android:text="OK"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/shape_button_rounded"
+                    style="@style/TextAppearance.AppCompat.Button"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.8"
+        android:background="@drawable/epp_logo_transparent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_athlete_reservation_item"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginBottom="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/item_user_content_padding">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_athlete_reservation_image"
+            android:layout_width="@dimen/item_user_image_size_small"
+            android:layout_height="@dimen/item_user_image_size_small"
+            android:contentDescription="@string/image_contentDescription"
+            android:src="@drawable/person_128"
+            app:civ_border_color="@color/primary_text_color"
+            app:civ_border_width="@dimen/item_user_image_circular_border_width"/>
+
+
+            <TextView
+                android:id="@+id/tv_item_athlete_reservation_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/item_user_name_text_size_small"
+                android:layout_marginStart="10dp"
+                tools:text="Athlete Name"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_workout_attendee_check"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:src="@drawable/blue_check_circle_24"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_user_divider_height"
+        android:layout_marginTop="@dimen/item_user_divider_marginTop"
+        android:visibility="gone"
+        android:background="@color/divider_color"/>
+
+
+</androidx.cardview.widget.CardView>

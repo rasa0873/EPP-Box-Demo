@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_week_workout_item"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_workout_date_week"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:layout_height="@dimen/item_user_image_size_large"
+            android:background="@color/light_gray1"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_week_workout_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/epp_primary"
+                android:text="5:00 PM"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:fontFamily="@font/montserrat"
+
+                />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_workout_name_layout_marginStart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_week_workout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text_color"
+                android:textSize="@dimen/item_user_name_text_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Workout description"/>
+
+            <TextView
+                android:id="@+id/tv_item_week_workout_trainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="@dimen/item_user_created_by_text_size"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="Arnold S."/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_item_week_workout_vacancies"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/epp_primary"
+                android:textSize="@dimen/item_user_created_by_text_size"
+                android:gravity="end|top"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                tools:text="8"/>
+
+            <ImageView
+                android:id="@+id/iv_item_week_workout_reserved"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/blue_check_24"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

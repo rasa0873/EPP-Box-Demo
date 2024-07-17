@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_of_nav_main"
+    app:cardElevation="7dp"
+    app:cardCornerRadius="0dp">
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/circular_gradient_background_6"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_user_image"
+            android:layout_width="@dimen/nav_image_size"
+            android:layout_height="@dimen/nav_image_size"
+            android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+            android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+            app:civ_border_color="@color/light_gray1"
+            app:civ_border_width="@dimen/nav_image_circular_border_width"
+            android:elevation="@dimen/round_image_elevation"
+            android:contentDescription="@string/image_contentDescription"
+            android:src="@drawable/person_128"/>
+
+        <TextView
+            android:id="@+id/tv_drawer_header_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+            android:layout_marginTop="@dimen/nav_content_margin_top"
+            android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+            android:text="User Name"
+            android:textColor="@color/light_gray1"
+            android:textSize="@dimen/nav_user_name_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_drawer_header_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nav_content_margin_StartEnd"
+            android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
+            android:layout_marginBottom="@dimen/nav_content_margin_bottom"
+            android:textColor="@color/light_gray1"
+            android:textSize="14sp"
+            android:text="user@email.com"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/nav_image_size3"
+            android:layout_height="@dimen/nav_image_size3"
+            android:src="@drawable/epp_logo_transparent"
+            android:alpha="0.4"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

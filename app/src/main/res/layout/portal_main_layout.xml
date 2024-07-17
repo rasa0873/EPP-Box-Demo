@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        >
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="@dimen/portal_card_view_margin_bottom"
+                android:backgroundTint="@color/white">
+
+                <!-- Add your CardView content here -->
+                <LinearLayout
+                    android:id="@+id/ll_portal_classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/clases_small_5"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/calendar"
+                        android:layout_weight="3"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/calendar_capital"
+                            android:textColor="@color/epp_primary"
+                            android:gravity="start|center"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_portal_classes_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textColor="@color/light_gray3"
+                            android:gravity="end|center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="16sp"/>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="@dimen/portal_card_view_margin_bottom"
+                android:backgroundTint="@color/white">
+
+                <!-- Add your CardView content here -->
+                <LinearLayout
+                    android:id="@+id/ll_portal_trainers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ernesto_1"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/trainers"
+                        android:layout_weight="3"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/trainers"
+                            android:textColor="@color/epp_primary"
+                            android:gravity="start|center"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="18sp"/>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="@dimen/portal_card_view_margin_bottom"
+                android:backgroundTint="@color/white">
+
+                <!-- Add your CardView content here -->
+                <LinearLayout
+                    android:id="@+id/ll_portal_plans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/planes_2"
+                        android:contentDescription="@string/plan"
+                        android:scaleType="centerCrop"
+                        android:layout_weight="3"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/plans_capital"
+                            android:textColor="@color/epp_primary"
+                            android:gravity="start|center"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="18sp"/>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                app:cardCornerRadius="@dimen/card_view_corner_radius"
+                app:cardElevation="4dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginBottom="@dimen/portal_card_view_margin_bottom"
+                android:backgroundTint="@color/white">
+
+                <!-- Add your CardView content here -->
+                <LinearLayout
+                    android:id="@+id/ll_portal_athletes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/athletes_7"
+                        android:contentDescription="@string/athletes"
+                        android:scaleType="fitEnd"
+                        android:layout_weight="3"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/athletes"
+                            android:textColor="@color/epp_primary"
+                            android:gravity="start|center"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_portal_athlete_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text=""
+                            android:textColor="@color/light_gray3"
+                            android:gravity="end|center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="16sp"/>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Add more CardView items here -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

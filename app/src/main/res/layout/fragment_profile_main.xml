@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    tools:context=".main.fragments.ProfileMainFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.7"
+            android:src="@drawable/gray_person_vector_24"/>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_profile_edit_name"
+            android:textColor="@color/dark_gray1"
+            android:textSize="14sp"
+            android:focusableInTouchMode="false"
+            android:textStyle="bold"/>
+
+            <EditText
+            android:id="@+id/et_profile_main_fragment_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:importantForAutofill="no"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="5dp"
+            android:text="Athlete name"
+            android:focusable="false"
+            android:textColor="@color/dark_gray1"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:maxEms="30"
+            android:ellipsize="end"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray3"
+        android:focusableInTouchMode="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.7"
+            android:src="@drawable/gray_id_card_24"/>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_profile_edit_id"
+                android:textColor="@color/dark_gray1"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_profile_main_fragment_id"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:importantForAutofill="no"
+                android:background="@android:color/transparent"
+                android:text="1234567"
+                android:focusable="false"
+                android:textColor="@color/dark_gray1"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxEms="15"
+                android:ellipsize="end"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray3"
+                android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray3"
+        android:focusableInTouchMode="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.7"
+            android:src="@drawable/gray_phone_android_24"/>
+
+         <LinearLayout
+            android:id="@+id/ll_profile_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_profile_edit_phone"
+                android:textColor="@color/dark_gray1"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_profile_main_fragment_phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:importantForAutofill="no"
+                android:layout_marginBottom="5dp"
+                android:text="+123456789"
+                android:focusable="false"
+                android:textColor="@color/dark_gray1"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxEms="24"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray3"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray3"
+        android:focusableInTouchMode="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.7"
+            android:src="@drawable/gray_role_vector_24"/>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_user_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_profile_edit_role"
+                android:textColor="@color/dark_gray1"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_profile_main_fragment_role"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:layout_marginBottom="5dp"
+                android:importantForAutofill="no"
+                android:text="Athlete"
+                android:focusable="false"
+                android:textColor="@color/dark_gray1"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:maxEms="40"
+                android:ellipsize="end"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray3"
+                android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray3"
+        android:focusableInTouchMode="false"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        />
+
+
+
+</LinearLayout>

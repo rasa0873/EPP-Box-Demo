@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_title_text_size">18sp</dimen>
+    <dimen name="authentication_screen_content_marginTop">40dp</dimen>
+    <dimen name="authentication_screen_marginStartEnd">25dp</dimen>
+    <dimen name="authentication_description_text_size">16sp</dimen>
+    <dimen name="authentication_screen_card_view_marginTop">60dp</dimen>
+    <dimen name="authentication_screen_card_view_marginTop2">30dp</dimen>
+    <dimen name="portal_card_view_margin_bottom">7dp</dimen>
+    <dimen name="card_view_marginBottom">10dp</dimen>
+    <dimen name="card_view_elevation">4dp</dimen>
+    <dimen name="card_view_corner_radius">10dp</dimen>
+    <dimen name="card_view_layout_content_padding">16dp</dimen>
+    <dimen name="authentication_screen_til_marginStartEnd">16dp</dimen>
+    <dimen name="authentication_screen_til_marginTop">20dp</dimen>
+    <dimen name="et_text_size">14sp</dimen>
+    <dimen name="btn_marginStartEnd">20dp</dimen>
+    <dimen name="sign_up_screen_btn_marginTop">30dp</dimen>
+    <dimen name="btn_paddingTopBottom">8dp</dimen>
+    <dimen name="btn_text_size">14sp</dimen>
+    <dimen name="et_sign_in_padding_top">12dp</dimen>
+    <dimen name="snackBar_text_image_padding">14dp</dimen>
+
+    <dimen name="round_image_elevation">10dp</dimen>
+
+    <dimen name="nav_image_circular_border_width">1dp</dimen>
+    <dimen name="nav_image_size">80dp</dimen>
+    <dimen name="nav_image_size2">70dp</dimen>
+    <dimen name="nav_image_size3">50dp</dimen>
+    <dimen name="profile_image_size">100dp</dimen>
+    <dimen name="profile_image_size_large">120dp</dimen>
+    <dimen name="profile_image_size_small">70dp</dimen>
+    <dimen name="nav_content_margin_StartEnd">16dp</dimen>
+    <dimen name="nav_content_margin_top">5dp</dimen>
+    <dimen name="nav_content_margin_bottom">10dp</dimen>
+    <dimen name="nav_user_name_text_size">16sp</dimen>
+    <dimen name="nav_divider_height">2dp</dimen>
+    <dimen name="height_of_nav_main">200dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="item_user_content_marginBottom">10dp</dimen>
+    <dimen name="item_user_content_padding">10dp</dimen>
+    <dimen name="item_user_image_size_small">50dp</dimen>
+    <dimen name="item_user_image_size">60dp</dimen>
+    <dimen name="item_user_image_size_large">80dp</dimen>
+    <dimen name="item_user_image_circular_border_width">0.5dp</dimen>
+    <dimen name="item_user_name_layout_marginStart">10dp</dimen>
+    <dimen name="item_workout_name_layout_marginStart">12dp</dimen>
+    <dimen name="item_user_name_text_size_small">14sp</dimen>
+    <dimen name="item_user_name_text_size">16sp</dimen>
+    <dimen name="item_user_created_by_text_size">14sp</dimen>
+    <dimen name="item_user_divider_marginTop">5dp</dimen>
+    <dimen name="item_user_divider_height">0.3dp</dimen>
+
+    <dimen name="dimen_create_workout_button_marginEndStart">40dp</dimen>
+    <dimen name="view_workout_btn_marginTop">20dp</dimen>
+    <dimen name="dot_size">1</dimen>
+    <dimen name="marginTopBioDetails">10dp</dimen>
+
+    <dimen name="instagram_icon_marginTop">9dp</dimen>
+
+    <dimen name="calendar_create_wo_screen_marginStartEnd">15dp</dimen>
+
+
+</resources>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dark_epp_bw_small"
+    tools:context=".main.activities.ViewWorkoutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/nav_image_size3"
+                android:layout_height="@dimen/nav_image_size3"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/epp_logo_transparent"
+                android:alpha="0.4"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+                <LinearLayout
+                    android:id="@+id/ll_workout_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_workout_view_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                              android:layout_width="0dp"
+                              android:layout_weight="10"
+                              android:layout_height="wrap_content"
+                              android:text="@string/workout_title"
+                              android:textColor="@color/dark_gray1"
+                              android:textSize="14sp"
+                              android:focusableInTouchMode="false"
+                              android:textStyle="bold"/>
+
+                            <ImageView
+                                android:id="@+id/iv_workout_cancel_delete"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/grey_cancel_24"
+                                android:alpha="0.7"
+                                android:layout_gravity="end"
+                                />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_view_workout_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:importantForAutofill="no"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="3dp"
+                            android:text="Workout title"
+                            android:focusable="false"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:maxLines="1"
+                            android:maxEms="30"
+                            android:ellipsize="end"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray3"
+                            android:focusableInTouchMode="false"
+                            android:visibility="visible"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_workout_view_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:padding="10dp"
+                        android:background="@drawable/background_transparent_curved_angles"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/workout_description"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:layout_marginTop="2dp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_view_workout_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Workout description"
+                            android:background="@android:color/transparent"
+                            android:focusable="false"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:minLines="1"
+                            android:maxEms="30"
+                            android:ellipsize="end"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/trainer"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_view_workout_trainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:importantForAutofill="no"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="3dp"
+                            android:text="Trainer's name"
+                            android:focusable="false"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:maxLines="1"
+                            android:maxEms="30"
+                            android:ellipsize="end"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray3"
+                            android:focusableInTouchMode="false"
+                            android:visibility="visible"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/time"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_view_workout_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:importantForAutofill="no"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="3dp"
+                            android:text="Workout's time"
+                            android:focusable="false"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:maxLines="1"
+                            android:maxEms="30"
+                            android:ellipsize="end"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray3"
+                            android:focusableInTouchMode="false"
+                            android:visibility="visible"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/duration"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_view_workout_duration"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:importantForAutofill="no"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="3dp"
+                            android:text="Workout's duration"
+                            android:focusable="false"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:maxLines="1"
+                            android:maxEms="30"
+                            android:ellipsize="end"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray3"
+                            android:focusableInTouchMode="false"
+                            android:visibility="visible"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="34dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/workout_date"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_view_workout_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:importantForAutofill="no"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Workout's date"
+                            android:focusable="false"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:maxLines="1"
+                            android:maxEms="30"
+                            android:ellipsize="end"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/light_gray3"
+                            android:focusableInTouchMode="false"
+                            android:visibility="visible"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_workout_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_trainer_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_trainer_notes_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/trainer_notes"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:id="@+id/iv_view_workout_trainer_note_pen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/dark_edit_24" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_user_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_user_notes_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_notes"
+                            android:textColor="@color/dark_gray1"
+                            android:textSize="14sp"
+                            android:focusableInTouchMode="false"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:id="@+id/iv_view_workout_user_note_pen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/dark_edit_24" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="@dimen/card_view_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/reservations"
+                                android:textColor="@color/dark_gray1"
+                                android:textSize="14sp"
+                                android:focusableInTouchMode="false"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/tv_view_workout_vacancies"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:textSize="14sp"
+                                android:text="-/-"
+                                android:textColor="@color/light_gray3"/>
+
+
+                    </RelativeLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_athlete_reservation_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        tools:listitem="@layout/item_athlete_reservation"
+                        />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_reserve_workout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/view_workout_btn_marginTop"
+                android:layout_marginStart="@dimen/dimen_create_workout_button_marginEndStart"
+                android:layout_marginEnd="@dimen/dimen_create_workout_button_marginEndStart"
+                android:layout_marginBottom="@dimen/dimen_create_workout_button_marginEndStart"
+                android:background="@drawable/shape_button_rounded"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                style="@style/ButtonStyle"
+                android:text="@string/reserve_workout"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btn_text_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

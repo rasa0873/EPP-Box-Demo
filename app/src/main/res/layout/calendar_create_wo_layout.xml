@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/button_prev_month_create_wo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="18dp"
+            android:src="@drawable/left_double_arrow"
+            android:background="@null"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/monthYearTV_create_wo"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="June 2023"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/button_next_month_create_wo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="18dp"
+            android:src="@drawable/right_double_arrow"
+            android:textColor="@color/epp_primary"
+            android:background="@null"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sun"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mon"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tue"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wed"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/thu"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fri"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sat"
+            android:textColor="@color/dark_gray1"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/calendarRecyclerView_create_wo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/calendar_cell_create_wo"/>
+
+
+
+</LinearLayout>

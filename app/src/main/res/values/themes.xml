@@ -1,0 +1,140 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- References from: -->
+    <!-- https://m2.material.io/design/color/the-color-system.html#color-theme-creation -->
+
+    <!-- Base application theme. -->
+    <style name="Theme.EPPDraft1" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/epp_primary</item>
+        <item name="colorPrimaryVariant">@color/epp_primary_variant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/epp_secondary</item>
+        <item name="colorSecondaryVariant">@color/epp_secondary_variant</item>
+        <item name="colorOnSecondary">@color/light_gray2</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorSecondaryVariant</item>
+
+        <!-- various -->
+        <item name="backgroundColor">@color/white</item>
+        <item name="colorSurface">@color/light_gray1</item>
+        <item name="colorError">@color/error_red2</item>
+
+        <!-- On colors -->
+        <item name="colorOnBackground">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnError">@color/white</item>
+
+
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/light_gray1</item>
+
+    </style>
+
+    <style name="Theme.EPPDraft1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.EPPDraft1.NoActionBarPortal">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Status bar color. -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Theme.EPPDraft1.NoActionBar.Profile">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:textCursorDrawable">@color/light_gray3</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+
+    </style>
+
+    <style name="HintTextStyle" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">12dp</item>
+        <item name="android:verticalSpacing">4dp</item>
+
+    </style>
+
+    <style name="ButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+    </style>
+
+    <style name="SnackBar" parent="ThemeOverlay.Material3.Snackbar">
+        <item name="android:textAppearance">?attr/textAppearanceOverline</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"></style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"></style>
+
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item> <!-- Adjust the size as per your requirement -->
+    </style>
+    <style name="ToolbarSubtitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">14sp</item> <!-- Adjust the size as per your requirement -->
+    </style>
+
+    <style name="Drawer">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.EPPDraft1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.EPPDraft1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_upper_corners_dialog</item>
+    </style>
+
+
+    <!-- Calendar styles -->
+    <style name="CalenderViewCustom" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="colorAccent">@color/epp_primary</item>
+        <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/dark_gray1</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="calendar_number">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textStyle">normal</item>
+
+    </style>
+
+    <style name="calendar_number_bold">
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.MaterialComponents.Dialog.Alert">
+
+    </style>
+
+
+</resources>
